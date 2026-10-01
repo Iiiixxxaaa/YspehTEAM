@@ -4,15 +4,15 @@ body{
 }
 
 
-/* ОСНОВНОЙ КОНТЕЙНЕР, НАСТРОЙКИ ХЕДА И БОДИ */
+/* ОСНОВНОЙ КОНТЕЙНЕР, НАСТРОЙКИ ХЕДА, БОДИ И ФУТТЕРА*/
 .container{
     width: 100%;
-    height: 200vh;
-    background-color:  #4ad44a ;
+    height: 175vh;
+    background-color:  #e2f7e2 ;
 
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 3% 97%;
+    grid-template-rows: 3.5% 96.5%;
 }
 
 .head-container{
@@ -21,16 +21,31 @@ body{
     grid-template-columns:repeat(3, 33%);
     grid-template-rows: 100%;
     justify-content: center;
+
+    background-image: url('../img/headbg.jpg'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size:100%;
+    
 }
 
 .body-container{
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows: 30% 70%;
+    grid-template-rows: 50% 50%;
     justify-content: center;
 }
 
-
+.footer-conteiner{
+    width: 100%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 50% 50%;
+    justify-content: center;
+    background-color: #2c312e;
+}
 
 
 
@@ -63,7 +78,7 @@ body{
     grid-template-rows: 100%;
 }
 .fi-house{
-    background-image: url('../img/house.png'); 
+    background-image: url('../img/housered.png'); 
     background-repeat: no-repeat;  
     background-position: center; 
     background-position: center;
@@ -79,7 +94,7 @@ body{
     grid-template-rows: 100%;
 }
 .fi-raspis{
-    background-image: url('../img/raspis.png'); 
+    background-image: url('../img/raspisred.png'); 
     background-repeat: no-repeat;  
     background-position: center; 
     background-position: center;
@@ -95,7 +110,7 @@ body{
     grid-template-rows: 100%;
 }
 .fi-us{
-    background-image: url('../img/aboutus.png'); 
+    background-image: url('../img/aboutusred.png'); 
     background-repeat: no-repeat;  
     background-position: center; 
     background-position: center;
@@ -116,6 +131,13 @@ body{
 
 
 /* НАСТРОЙКИ БОДИ КОНТЕЙНЕРА  */
+.vlv{
+    /* background-color: #ffffff; */
+    border-radius: 1vh;
+    border: 0.2vh solid black;
+}
+
+
 .bigfoto-container{
     display: grid;  
     justify-content: center;
@@ -135,11 +157,11 @@ body{
 
 .info-container{
     display: grid;
-    grid-template-columns:repeat(2, 49.9%);
-    grid-template-rows: repeat(4, 24.6%);
+    grid-template-columns:repeat(2, 32.41%);
+    grid-template-rows: repeat(3, 30%);
     justify-content: center;
     align-content: center;
-    gap: 0.5vh;
+    gap: 1.3vh;
 }
 .info-card{
     display: grid;
@@ -163,69 +185,100 @@ body{
 
 .text-cont{
     display: grid;
-    grid-template-columns:100%;
-    grid-template-rows:50% 40% 10%;
+    grid-template-columns:95%;
+    grid-template-rows:90%;
     justify-content: center;
     align-content: center;
 }
 .name-cont{
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows:15% 85%;
-    justify-content: center;
+    grid-template-rows:35% 65%;
+    justify-content: center ;
     align-content: center;
 }
-.success-cont{
-    display: grid;
-    grid-template-columns:100%;
-    grid-template-rows:20% 80%;
-    justify-content: center;
-    align-content: center;
-}
-.quote-cont{
-    display: grid;
-    grid-template-columns:10% 90%;
-    grid-template-rows:100%;
-    justify-content: center;
-    align-content: center;
-}
+
 
 /* настройка текста */
 .name{
     font-family: 'Arial', sans-serif; 
-    font-size: 1.5vh;          
+    font-size: 3vh;          
     font-weight: 1000;     
-    color: #1e3b23;          
+    color: black;        
     letter-spacing: 0.03vh;  
+    line-height: 0.97;
+    align-content: center;
+
+
 }
 .name-text{
     font-family: 'Arial', sans-serif; 
     font-size: 1.3vh;          
     font-weight: 600;        
-    color: #1e3b23;          
+    color: #2c312e;      
     letter-spacing: 0.03vh;  
+    align-content: start;
 }
 
-.success{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* шлак */
+
+/* .success{
     font-family: 'Arial', sans-serif; 
     font-size: 1.4vh;          
     font-weight: 1000;     
-    color: #1e3b23;          
+    color: black;        
     letter-spacing: 0.03vh;  
 }
 .success-text{
     font-family: 'Arial', sans-serif; 
     font-size: 1.3vh;          
     font-weight: 600;        
-    color: #1e3b23;          
+    color: #2c312e;        
     letter-spacing: 0.03vh;  
-}
-
+} */
+/* 
 .quote{
     font-family: 'Arial', sans-serif; 
     font-size: 1.4vh;          
     font-weight: 1000;     
-    color: #1e3b23;          
+    color: black;           
     letter-spacing: 0.03vh;  
     align-content: center;
 }
@@ -233,11 +286,25 @@ body{
     font-family: 'Arial', sans-serif; 
     font-size: 1.3vh;          
     font-weight: 600;        
-    color: #1e3b23;          
+    color: #2c312e;        
     letter-spacing: 0.03vh;  
     align-content: center;
-}
+} */
 
+/* .success-cont{
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows:20% 80%;
+    justify-content: center;
+    align-content: center;
+} */
+/* .quote-cont{
+    display: grid;
+    grid-template-columns:10% 90%;
+    grid-template-rows:100%;
+    justify-content: center;
+    align-content: center;
+} */
 
 
 
@@ -266,12 +333,6 @@ body{
 
     
 
-/* .z{
-    background-color:#63D68E;
-} */
 
-.vlv{
-    background-color:#63D68E;
-}
 
 
