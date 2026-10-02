@@ -8,7 +8,7 @@ body{
 .container{
     width: 100%;
     height: 175vh;
-    background-color:  #e2f7e2 ;
+    background-color:  #edfaed ;
 
     display: grid;
     grid-template-columns:100%;
@@ -41,10 +41,10 @@ body{
     width: 100%;
     height: 40vh;
     display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 50% 50%;
+    grid-template-columns:33% 33%;
+    grid-template-rows: 100%;
     justify-content: center;
-    background-color: #2c312e;
+    background-color: #313332;
 }
 
 
@@ -62,60 +62,62 @@ body{
 
 .btn-container{
     display: grid;
-    grid-template-columns:repeat(3, 15%);
-    grid-template-rows: 70%;
+    grid-template-columns:repeat(3, 30%);
+    grid-template-rows: 50%;
     justify-content: center;
     align-content: center;
     gap: 1vh;
 }
 
 /* дом */
-.btn-home{
+.home-text{
     display: grid;  
     justify-content: right;
     align-content:center;
-    grid-template-columns: 50%;
+    grid-template-columns:50%;
     grid-template-rows: 100%;
-}
-.fi-house{
-    background-image: url('../img/housered.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size:83%;
-}
 
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size: 2vh;          
+    font-weight: 1000;        
+    color: #291818;      
+    letter-spacing: 0.03vh; 
+}
 /* расписание */
 .btn-raspis{
     display: grid;  
     justify-content: center;
     align-content:center;
-    grid-template-columns: 70%;
+    grid-template-columns: 75%;
     grid-template-rows: 100%;
-}
-.fi-raspis{
-    background-image: url('../img/raspisred.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 83%;
+
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size:2vh;          
+    font-weight: 1000;        
+    color: #291818;     
+    letter-spacing: 0.03vh;  
+
 }
 
-/* о нас */
+ /* о нас */
 .btn-us{
     display: grid;  
     justify-content: left;
     align-content:center;
-    grid-template-columns: 70%;
+    grid-template-columns:90%;
     grid-template-rows: 100%;
+
+    text-decoration: none;
+    font-family: 'Arial', sans-serif; 
+    font-size: 2vh;          
+    font-weight: 1000;        
+    color: #291818;       
+    letter-spacing: 0.03vh;  
+    justify-content: right;
 }
-.fi-us{
-    background-image: url('../img/aboutusred.png'); 
-    background-repeat: no-repeat;  
-    background-position: center; 
-    background-position: center;
-    background-size: 83%;
-}
+
 /* лого */
 .logo{
     background-image: url('../img/logoparty.png'); 
@@ -123,7 +125,63 @@ body{
     background-position: center; 
     background-position: center;
     background-size: 80%;
+} 
+
+
+/* ХОВЕРЫ НА ХЕД */
+.line-red-home{
+    width: 6%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 0.2%;
+    margin-left: 4.4%;
+    background-color: rgb(219, 0, 0);
+
+    opacity: 0; 
+    transition: opacity 0.4s ease;
 }
+.home-text:hover + .line-red-home {
+  opacity: 1;
+}
+
+
+.line-red-raspis{
+    width: 8%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 1.6%;
+    margin-left: 0.4%;
+    background-color: rgb(219, 0, 0);
+
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.raspis-text:hover + .line-red-raspis {
+  opacity: 1;
+}
+
+
+.line-red-aboutus{
+    width: 4%;
+    height: 0.5vh;
+    position: absolute;
+    margin-top: 1.6%;
+    margin-left: 0.5%;
+    background-color: rgb(219, 0, 0);
+
+    opacity: 0; 
+    transition: opacity 0.4s ease;
+}
+.aboutus-text:hover + .line-red-aboutus {
+  opacity: 1;
+}
+
+
+
+
+
+
+
 
 
 
@@ -134,7 +192,7 @@ body{
 .vlv{
     /* background-color: #ffffff; */
     border-radius: 1vh;
-    border: 0.2vh solid black;
+    border: 0.1vh solid black;
 }
 
 
@@ -158,7 +216,7 @@ body{
 .info-container{
     display: grid;
     grid-template-columns:repeat(2, 32.41%);
-    grid-template-rows: repeat(3, 30%);
+    grid-template-rows: repeat(3, 26%);
     justify-content: center;
     align-content: center;
     gap: 1.3vh;
@@ -193,7 +251,7 @@ body{
 .name-cont{
     display: grid;
     grid-template-columns:100%;
-    grid-template-rows:35% 65%;
+    grid-template-rows:45% 55%;
     justify-content: center ;
     align-content: center;
 }
@@ -207,7 +265,7 @@ body{
     color: black;        
     letter-spacing: 0.03vh;  
     line-height: 0.97;
-    align-content: center;
+    align-content: end;
 
 
 }
@@ -217,7 +275,7 @@ body{
     font-weight: 600;        
     color: #2c312e;      
     letter-spacing: 0.03vh;  
-    align-content: start;
+    margin-top: 2%;
 }
 
 
@@ -226,9 +284,185 @@ body{
 
 
 
+/* ФУТЕР */
+.foot-cont-one{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+}
+
+.foot-logo{
+    display: grid;  
+    justify-content: left;
+    align-content:center;
+    grid-template-columns: 70%;
+    grid-template-rows: 100%;
+}
+.foot-logo-img{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    background-image: url('../img/logowhite.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 100%;
+    opacity: 0.70; 
+    transition: opacity 0.4s ease-in-out;
+    &:hover {
+        background-image: url('../img/logo.png'); 
+    }
+    
+}
+/* .in-two-foot{
+     border: 1px solid blue; 
+} */
+.foot-text-prava{
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.7vh;          
+    font-weight: 600;        
+    color: #a1a1a1;      
+    letter-spacing: 0.09vh;  
+    align-content: start;
+}
+.foot-text-white{
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.7vh;          
+    font-weight: 600;        
+    color: #fdfdfd;      
+    letter-spacing: 0.09vh;  
+    align-content: start;
+}
 
 
 
+.foot-cont-two{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 45% 15% 36%;
+}
+.foot-num{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 77%;
+}
+.foot-num-text{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 20%;
+}
+.fnt-white-num{
+    font-family: 'Arial', sans-serif; 
+    font-size: 3vh;          
+    font-weight: 800;        
+    color: #fdfdfd;      
+    letter-spacing: 0.09vh;  
+    align-content: start;
+}
+.ftn-gmail{
+    font-family: 'Arial', sans-serif; 
+    font-size: 2vh;          
+    font-weight: 600;        
+    color: #a1a1a1;      
+    letter-spacing: 0.09vh;  
+    align-content: start;
+}
+.ftn-adres-ebaniy{
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.7vh;          
+    font-weight: 600;        
+    color: #a1a1a1;      
+    letter-spacing: 0.09vh;  
+    align-content: end;
+}
+
+
+
+.foot-info-text{
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.7vh;          
+    font-weight: 600;        
+    color: #a1a1a1;      
+    letter-spacing: 0.09vh;  
+    margin-top: 5%;
+}
+.foot-info{
+    display: grid;  
+    justify-content: left;
+    align-content:center;
+    grid-template-columns: repeat(3, 12%);
+    grid-template-rows: 100%;
+}
+.logo-max{
+    display: grid;  
+    justify-content: right;
+    align-content:center;
+    grid-template-columns:100%;
+    grid-template-rows: 100%;
+}
+.logo-tg{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+.logo-tiktok{
+    display: grid;  
+    justify-content: left;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+}
+
+
+
+.img-max{
+    background-image: url('../img/maxlogo.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 80%;
+    opacity: 0.70; 
+    transition: opacity 0.4s ease;
+    &:hover {
+        opacity: 1; 
+    }
+}
+.img-tg{
+    background-image: url('../img/tglogo.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 80%;
+    opacity: 0.70; 
+    transition: opacity 0.4s ease;
+    &:hover {
+        opacity: 1; 
+    }
+}
+.img-tiktok{
+    background-image: url('../img/tiktoklogo.png'); 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    background-position: center;
+    background-size: 75%;
+    opacity: 0.70; 
+    transition: opacity 0.4s ease;
+    &:hover {
+        opacity: 1; 
+    }
+}
 
 
 
@@ -305,6 +539,7 @@ body{
     justify-content: center;
     align-content: center;
 } */
+ 
 
 
 
