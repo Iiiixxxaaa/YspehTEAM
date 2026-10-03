@@ -82,7 +82,8 @@ body{
     font-size: 2vh;          
     font-weight: 1000;        
     color: #291818;      
-    letter-spacing: 0.03vh; 
+    letter-spacing: 0.03vh;
+    user-select: none; 
 }
 /* расписание */
 .btn-raspis{
@@ -98,6 +99,7 @@ body{
     font-weight: 1000;        
     color: #291818;     
     letter-spacing: 0.03vh;  
+    user-select: none;
 
 }
 
@@ -116,6 +118,7 @@ body{
     color: #291818;       
     letter-spacing: 0.03vh;  
     justify-content: right;
+    user-select: none;
 }
 
 /* лого */
@@ -134,7 +137,7 @@ body{
     height: 0.5vh;
     position: absolute;
     margin-top: 0.2%;
-    margin-left: 4.4%;
+    margin-left: 3.1%;
     background-color: rgb(219, 0, 0);
 
     opacity: 0; 
@@ -266,8 +269,7 @@ body{
     letter-spacing: 0.03vh;  
     line-height: 0.97;
     align-content: end;
-
-
+    user-select: none;
 }
 .name-text{
     font-family: 'Arial', sans-serif; 
@@ -276,6 +278,7 @@ body{
     color: #2c312e;      
     letter-spacing: 0.03vh;  
     margin-top: 2%;
+    user-select: none;
 }
 
 
@@ -328,6 +331,7 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: start;
+    user-select: none;
 }
 .foot-text-white{
     font-family: 'Arial', sans-serif; 
@@ -336,6 +340,7 @@ body{
     color: #fdfdfd;      
     letter-spacing: 0.09vh;  
     align-content: start;
+    user-select: none;
 }
 
 
@@ -368,6 +373,7 @@ body{
     color: #fdfdfd;      
     letter-spacing: 0.09vh;  
     align-content: start;
+    user-select: none;
 }
 .ftn-gmail{
     font-family: 'Arial', sans-serif; 
@@ -376,6 +382,7 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: start;
+    user-select: none;
 }
 .ftn-adres-ebaniy{
     font-family: 'Arial', sans-serif; 
@@ -384,6 +391,7 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: end;
+    user-select: none;
 }
 
 
@@ -395,6 +403,7 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     margin-top: 5%;
+    user-select: none;
 }
 .foot-info{
     display: grid;  
