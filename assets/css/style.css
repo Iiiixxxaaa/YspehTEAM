@@ -331,7 +331,6 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: start;
-    user-select: none;
 }
 .foot-text-white{
     font-family: 'Arial', sans-serif; 
@@ -340,7 +339,6 @@ body{
     color: #fdfdfd;      
     letter-spacing: 0.09vh;  
     align-content: start;
-    user-select: none;
 }
 
 
@@ -373,7 +371,6 @@ body{
     color: #fdfdfd;      
     letter-spacing: 0.09vh;  
     align-content: start;
-    user-select: none;
 }
 .ftn-gmail{
     font-family: 'Arial', sans-serif; 
@@ -382,7 +379,6 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: start;
-    user-select: none;
 }
 .ftn-adres-ebaniy{
     font-family: 'Arial', sans-serif; 
@@ -391,7 +387,6 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: end;
-    user-select: none;
 }
 
 
@@ -403,7 +398,6 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     margin-top: 5%;
-    user-select: none;
 }
 .foot-info{
     display: grid;  

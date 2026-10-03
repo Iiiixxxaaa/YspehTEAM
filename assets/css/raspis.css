@@ -248,10 +248,14 @@ body{
     font-family: 'Arial', sans-serif; 
     font-size: 3.5vh;          
     font-weight: 600;        
-    color: rgb(212, 208, 201);  ;      
+    color: rgb(230, 230, 230);  ;      
     letter-spacing: 0.09vh;  
     user-select: none;
-    align-items: end;
+    align-items: center ;
+
+    background-color: #4E7259;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
 }
 .day-name-container{
     display: grid;  
@@ -259,6 +263,7 @@ body{
     align-content:center;
     grid-template-columns:repeat(7, 14.3%);
     grid-template-rows: 100%;
+    background-color:#1C3323; 
 }
 .day-name{
     display: grid;  
@@ -268,11 +273,12 @@ body{
     font-family: 'Arial', sans-serif; 
     font-size: 2vh;          
     font-weight: 600;        
-    color: #a1a1a1;      
+    color: #e4e4e4;      
     letter-spacing: 0.09vh;  
     align-items: end;
     justify-content: center;
     user-select: none;
+    align-items: center;
 }
 
 .calendar-body{
@@ -281,9 +287,10 @@ body{
     align-content:center;
     grid-template-columns:repeat(7, 14.3%);
     grid-template-rows: repeat(5, 20%);
+    background-color: white;
 }
 .calendar-item{
-    border: 0.1vh solid rgb(250, 242, 227);
+    border: 0.1vh solid #8FB39B;
 
     display: grid;  
     grid-template-columns:30%;
@@ -292,7 +299,7 @@ body{
     font-family: 'Arial', sans-serif; 
     font-size: 7vh;          
     font-weight: 600;        
-    color: rgb(212, 208, 201);      
+    color:#1C3323;      
     letter-spacing: 0.09vh;  
     align-items: center;
     justify-content:center;
@@ -306,7 +313,7 @@ body{
     font-family: 'Arial', sans-serif; 
     font-size: 7vh;          
     font-weight: 600;        
-    color: rgb(212, 208, 201); 
+    color:#1C3323;      
     letter-spacing: 0.09vh;  
     justify-content: center;
 }
@@ -314,8 +321,7 @@ body{
     display: grid;  
     grid-template-columns:100%;
     grid-template-rows: 100%;
-    background-color: rgb(2, 48, 0) ;
-    opacity: 0.3;
+    background-color: #d6e0d9;
 }
 
 /*NEXT ИВЕНТЫ */
@@ -334,7 +340,8 @@ body{
     grid-template-rows:7% 93%;
 
     border-radius: 1vh;
-    background-color: #515352;
+    background-color: #385541;
+    opacity: 0.8;
 }
 .next-event-name{
     display: grid;  
@@ -353,7 +360,7 @@ body{
     font-family: 'Arial', sans-serif; 
     font-size: 2.5vh;          
     font-weight: 600;        
-    color: rgb(212, 208, 201);      
+    color: rgb(245, 245, 245);      
     letter-spacing: 0.09vh;  
     align-items: end;
     justify-content:center;
@@ -425,7 +432,6 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: start;
-    user-select: none;
 }
 .foot-text-white{
     font-family: 'Arial', sans-serif; 
@@ -434,7 +440,6 @@ body{
     color: #fdfdfd;      
     letter-spacing: 0.09vh;  
     align-content: start;
-    user-select: none;
 }
 
 
@@ -467,7 +472,6 @@ body{
     color: #fdfdfd;      
     letter-spacing: 0.09vh;  
     align-content: start;
-    user-select: none;
 }
 .ftn-gmail{
     font-family: 'Arial', sans-serif; 
@@ -476,7 +480,6 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: start;
-    user-select: none;
 }
 .ftn-adres-ebaniy{
     font-family: 'Arial', sans-serif; 
@@ -485,7 +488,6 @@ body{
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
     align-content: end;
-    user-select: none;
 }
 
 
@@ -496,8 +498,7 @@ body{
     font-weight: 600;        
     color: #a1a1a1;      
     letter-spacing: 0.09vh;  
-    margin-top: 5%;
-    user-select: none;
+    margin-top: 5%; 
 }
 .foot-info{
     display: grid;  
