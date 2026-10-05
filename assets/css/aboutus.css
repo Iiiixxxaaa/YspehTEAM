@@ -652,7 +652,7 @@ body{
     
     /* 1. ГЛАВНЫЙ КОНТЕНЕР: сбрасываем огромные 520vh, даем расти по контенту */
     .container {
-        height: auto;
+        height: 1200vh;
         display: grid;
         grid-template-columns: 100%;
         grid-template-rows: auto auto; /* Шапка и боди идут друг за другом */
