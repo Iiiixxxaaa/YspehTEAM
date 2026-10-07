@@ -672,41 +672,100 @@ body{
 
 
 /* НАСТРОЙКИ БОДИ КОНТЕЙНЕРА */
-.body-text-container{
-    display: none;
+.container{
+    width: 100%;
+    height: 80vh;
+    background-color:  #edfaed ;
+
+    display: grid;
+    grid-template-columns:100%;
+    grid-template-rows: 6.3% 93.7%;
 }
 
-.body-events-container{
-    display: none;
+.forma-container{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns:70%;
+    grid-template-rows: 70% 15%;
+    gap: 1.5vh;
 }
-.events-calendar-container{
-    display: none;
+.forma-mini-cont{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 90%;
+    grid-template-rows: 7% 85%;
+    gap: 0.5vh;
+
+    background-color: white;
+    border-radius: 2vh;
+    box-shadow: 0 4px 10px 7px rgba(0, 0, 0, 0.08); 
 }
-.day-name-container{
-    display: none;
-}
-
-.next-events-container{
-   display: none;
-}
-
-
-
-
-
-.text-about-raspis-idet-nah{
-    position: absolute;
-    width: 80%;
-    height: 108vh;
-    top: 31%;
-    left:15%;
+.oglav-forma{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
 
     font-family: 'Arial', sans-serif; 
-    font-size: 4vh;          
+    font-size: 2vh;          
     font-weight: 600;        
-    color: #ffffff;      
+    color: #303030;      
     letter-spacing: 0.09vh;  
-}  */
+    align-items: center;
+    text-align: center;
+}
+.text-forma{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    font-family: 'Arial', sans-serif; 
+    font-size: 1.5vh;          
+    font-weight: 600;        
+    color: #303030;      
+    letter-spacing: 0.09vh;  
+    align-items: center;
+    text-align: left;
+}
+
+.zauavk-container{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    user-select: none;
+    text-decoration: none;
+}
+.btn-zauavk-container{
+    display: grid;  
+    justify-content: center;
+    align-content:center;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+
+    border-radius: 2vh;
+    background-color: white;
+    box-shadow: 0 4px 10px 7px rgba(0, 0, 0, 0.08); 
+
+    font-family: 'Arial', sans-serif; 
+    font-size: 3svh;          
+    font-weight: 600;        
+    color: #303030;      
+    letter-spacing: 0.09vh;  
+    align-items: center;
+    text-align: center;
+    user-select: none;
+}
+
+
+
 
 
 
@@ -908,6 +967,8 @@ body{
         opacity: 1; 
     }
 }
+
+
 
 
 
