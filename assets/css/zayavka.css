@@ -533,7 +533,7 @@ body{
 
 
 
-/* НАСТРОЙКИ ХЕД КОНТЕЙНЕРА
+ /* НАСТРОЙКИ ХЕД КОНТЕЙНЕРА */
 .logo-container{
     display: grid;
     grid-template-columns:99% 1%;
